@@ -70,7 +70,6 @@ class App extends Component {
     updatedPersons[personIndex] = updatedPerson;
 
     this.setState((prevState, props) => {
-
       return {
         persons: updatedPersons,
         changeCounter: prevState.changeCounter + 1

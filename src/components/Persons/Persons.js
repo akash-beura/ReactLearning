@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Person from '../Persons/Person/Person';
 
-
 class Persons extends Component {
 
     state = {
@@ -55,4 +54,3 @@ class Persons extends Component {
 
 
 export default Persons;
-

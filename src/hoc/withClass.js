@@ -2,13 +2,13 @@ import React from 'react';
 
 const withClass = (WrappedComponent, style) => {
 
-    return (props) => {
-        return(
+    return (props) =>
+        (
             <div className={style}>
-                <WrappedComponent props={props}/>
+                <WrappedComponent {...props} />
             </div>
         );
-    }
+
 };
 
 export default withClass;

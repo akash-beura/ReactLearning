@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import style from './Person.module.css';
 import Aux from '../../../hoc/Auxilliary';
 import PropTypes from 'prop-types';
-// import withClass from '../../../hoc/withClass';
+import withClass from '../../../hoc/withClass';
 
 
 class Person extends Component {
 
-    state = ({});
+    
 
     constructor(props) {
         super(props);
         this.elementRef = React.createRef();
+        this.state = ({
+
+        });
     }
 
 
@@ -52,4 +55,4 @@ Person.propTypes = {
     change: PropTypes.func
 }
 
-export default Person;
+export default withClass(Person,style.Person);
